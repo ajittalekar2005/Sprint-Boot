@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	   <bean id="sub" class="in.at.beans.Subject">
+	     <constructor-arg value="java"/>
+	     <constructor-arg value="pyhon"/>
+	     <constructor-arg value="php"/>
+	     
+	   </bean>
+	   
+	   <bean id="ter" class="in.at.beans.Teacher">
+	     <constructor-arg value="123"/>
+	     <constructor-arg value="Ajit"/>
+	     <constructor-arg ref="sub"/>
+	   </bean>
+</beans>
